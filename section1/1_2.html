@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer;
+                let numbs = new Array(a, b, c);
+
+                numbs.sort();
+                if (numbs[2] < numbs[0] + numbs[1]) {
+                    answer = "YES";
+                } else {
+                    answer = "NO";
+                }
+                return answer;
+            }
+
+            console.log(solution(6, 7, 11));
+        </script>
+    </body>
+</html>
