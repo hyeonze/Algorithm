@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){         
+                let answer=0;
+
+                for (let i = 0; i < s.length; i++) {
+                    if (s.charAt(i) >= 'A' && s.charAt(i) <= 'Z') {
+                        answer++;
+                    }
+                }
+                return answer;
+            }
+
+            let str="KoreaTimeGood";
+            console.log(solution(str));
+        </script>
+    </body>
